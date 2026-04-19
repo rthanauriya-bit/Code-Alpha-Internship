@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Image Gallery | Smart Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="gallery-wrap">
+        <header>
+            <h1>📸 just some pics</h1>
+            <p class="tagline">no filter, just vibes</p>
+        </header>
+
+        <div class="filter-section">
+            <button class="filter" data-filter="all">All</button>
+            <button class="filter" data-filter="nature">Nature</button>
+            <button class="filter" data-filter="city">City</button>
+            <button class="filter" data-filter="art">Art</button>
+            <button class="filter" data-filter="wildlife">Wildlife</button>
+        </div>
+
+        <div class="ai-tip" id="smartTip">
+           
+        </div>
+
+        <div class="gallery" id="galleryGrid"></div>
+
+        <div class="pagination">
+            <button id="prevBtn" class="page-btn">← Previous</button>
+            <span id="pageNum">page 1</span>
+            <button id="nextBtn" class="page-btn">Next →</button>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span id="closeLightbox" class="close-lightbox">&times;</span>
+        <img id="lightboxImage" class="lightbox-img" alt="">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+        <button id="lightboxPrev" class="lightbox-nav prev">‹</button>
+        <button id="lightboxNext" class="lightbox-nav next">›</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Modern Calculator | Clean Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc-container">
+        <div class="display-area">
+            <input type="text" id="expression" readonly value="0" placeholder="0">
+            <input type="text" id="result" readonly value="0">
+        </div>
+
+        <div class="keypad">
+            <button class="key ac-key" data-action="ac">AC</button>
+            <button class="key clear-key" data-action="c">C</button>
+            <button class="key func-key" data-op="percent">%</button>
+            <button class="key op-key" data-op="/">÷</button>
+
+            <button class="key" data-num="7">7</button>
+            <button class="key" data-num="8">8</button>
+            <button class="key" data-num="9">9</button>
+            <button class="key op-key" data-op="*">×</button>
+
+            <button class="key" data-num="4">4</button>
+            <button class="key" data-num="5">5</button>
+            <button class="key" data-num="6">6</button>
+            <button class="key op-key" data-op="-">−</button>
+
+            <button class="key" data-num="1">1</button>
+            <button class="key" data-num="2">2</button>
+            <button class="key" data-num="3">3</button>
+            <button class="key op-key" data-op="+">+</button>
+
+            <button class="key span-two" data-num="0">0</button>
+            <button class="key" data-num=".">.</button>
+            <button class="key equal-key" data-action="equals">=</button>
+        </div>
+
+        <div class="kb-tip">
+            ⌨️ Keyboard ready: 0-9 . + - * / % | Enter ↵ | Backspace (C) | ESC (AC)
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

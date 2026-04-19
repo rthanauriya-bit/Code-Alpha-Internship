@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vibe player | music that hits different</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player-card">
+            <div class="now-playing">
+                <span class="playing-label">now playing</span>
+                <div class="song-info">
+                    <h2 id="songTitle">Midnight Dreams</h2>
+                    <p id="artistName">Aurora Waves</p>
+                </div>
+            </div>
+
+            <div class="album-art">
+                <div class="album-circle" id="albumCircle">
+                    <i class="fas fa-music"></i>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <div class="time-info">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="ctrl-btn" id="shuffleBtn">
+                    <i class="fas fa-random"></i>
+                </button>
+                <button class="ctrl-btn" id="prevBtn">
+                    <i class="fas fa-backward-step"></i>
+                </button>
+                <button class="ctrl-btn play-pause" id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="ctrl-btn" id="nextBtn">
+                    <i class="fas fa-forward-step"></i>
+                </button>
+                <button class="ctrl-btn" id="repeatBtn">
+                    <i class="fas fa-repeat"></i>
+                </button>
+            </div>
+
+            <div class="volume-section">
+                <i class="fas fa-volume-down" id="volumeIcon"></i>
+                <div class="volume-slider">
+                    <div class="volume-bar" id="volumeBar">
+                        <div class="volume-fill" id="volumeFill"></div>
+                    </div>
+                </div>
+                <span id="volumePercent">70%</span>
+            </div>
+
+            <div class="playlist-section">
+                <div class="playlist-header">
+                    <span><i class="fas fa-list"></i> playlist</span>
+                    <span id="playlistCount"></span>
+                </div>
+                <ul class="playlist" id="playlist">
+                </ul>
+            </div>
+
+            <div class="player-footer">
+                <div class="equalizer" id="equalizer">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="autoplay-toggle">
+                    <span>autoplay</span>
+                    <label class="switch">
+                        <input type="checkbox" id="autoplayToggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" src=""></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
