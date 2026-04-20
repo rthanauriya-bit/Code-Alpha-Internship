@@ -38,7 +38,7 @@ function updateTip() {
         "⭐ try next/prev buttons for pagination"
     ];
     const randomTip = tips[Math.floor(Math.random() * tips.length)];
-    const tipElement = document.getElementById("tipText");
+    const tipElement = document.getElementById("smartTip");
     if(tipElement) {
         tipElement.style.opacity = "0";
         setTimeout(() => {
@@ -177,4 +177,5 @@ document.addEventListener('keydown', function(e) {
 });
 
 renderGallery();
+updateTip();
 setInterval(updateTip, 10000);
